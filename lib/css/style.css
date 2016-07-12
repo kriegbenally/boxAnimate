@@ -1,0 +1,45 @@
+/*Hey!  So I've been doing some research about animating different Elements.
+This is what I've learned so far.  I hope that it helps you be more creative.
+CSS is super dope!!  This is just barely the tip of the iceberg too.
+As you can tell, there is no bootstap assisting me.  Just CSS.  FYI.  The .js file
+does not work.  Still working out the kinks about that.  It was suppose to be
+a click function, but the stupid thing is not working.  Take not of the :hover in CSS.
+So yea, just reverse engineer this
+good good CSS and you should be gucci mane!
+I hope this will inspire you.
+
+:D
+
+with love from bluff
+
+-krieggy bears
+
+*/
+
+body {
+    padding: 50px;
+}
+
+.trigger{
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+    background: #ddd;
+}
+
+.box {
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms cubic-bezier(0, 0.91, 1, 1.82);
+    pointer-events: none;
+}
+
+.trigger:hover .box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
+
+.box p {
+    padding: 30%;
+}
